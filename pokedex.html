@@ -34,7 +34,7 @@
             width: 750px;
             margin: 50px auto;
         }
-        #left{
+        #left {
             width: 250px;
             height: 300px;
             float: left;
@@ -42,7 +42,7 @@
             border-top-left-radius: 30px;
             border-bottom-left-radius: 30px;
         }
-        #right{
+        #right {
             width: 250px;
             height: 250px;
             margin-top: 50px;
@@ -66,17 +66,61 @@
            margin-top: 40px;
            background-color: white;
        }
-       #left > .display > img{
+       #left > .display > img {
            margin-left: 15px;
            height: 100%;
        }
+       #dpad{
+           width: 60px;
+           height: 60px;
+           margin-top: 15px;
+           margin-left: 20px;
+           display: inline-block;
+       }
+       #dpad-top, #dpad-bottom{
+           width: 20px;
+           height: 20px;
+           margin-left: 20px;
+           background-color: #222222;
+       }
+        #dpad-horizontal{
+            width: 60px;
+            height: 20px;
+            background-color: #222222;
+        }
+        #btn-circle{
+            width: 50px;
+            height: 50px;
+            margin-left: 95px;
+            border-style: solid;
+            border-color: #181a81;
+            border-radius: 25px;
+            background-color: #0631e6;
+            display: inline-block;
+        }
+        #pad{
+            width: 148px;
+            height: 65px;
+            margin-left: 60px;
+            margin-top: 15px;
+        }
+        #pad > .btn{
+            width: 25px;
+            height: 25px;
+            background-color: #0631e6;
+            display: inline-block;
+            border-style: solid;
+            border-color: #181a81;
+            border-width: 2px;
+            border-radius: 3px;
+        }
        #right > .display {
-        width: 180px;
+           width: 180px;
            height: 120px;
            margin-left: 35px;
            margin-top: 20px;
            background-color: green;
-           font-size: 12px;
+           font-size: 11.4px;
        }
        ul{
            margin: 0;
@@ -105,43 +149,47 @@
                 <div class="display">
                     <img id="pkmn-img" src="pokedex/dialga.png" alt="pokemon">
                 </div>
-                <div id="dpad"></div>
-                <div id="dpad-top"></div>
-                <div id="dpad-horizontal"></div>
-                <div id="dpad-botton"></div>
+                <div id="dpad">
+                    <div id="dpad-top"></div>
+                    <div id="dpad-horizontal"></div>
+                    <div id="dpad-bottom"></div>
+                </div>
                 <div id="btn-circle"></div>
             </div>
-            <div id="rigth">
-                <div class="display"></div>
-              <ul>
-                  <li>
-                      <p><b>Nombre: dialga</b></p>
-                  </li>
-                  <li>
-                      <p><b>Tipo: Acero Dragon</b></p>
-                  </li>
-                  <li>
-                      <p><b>Altura: 5.4m</b></p>
-                  </li>
-                  <li>
-                      <p><b> Peso: 683 kg.</b></p>
-                  </li>
-                  <li>
-                      <p><b>Descripcion:Dialga es un Pokémon legendario. Se dice que controla y protege el paso del tiempo.</b></p>
-                  </li>
-              </ul>  
-            </div>
-            <div id="pad">
-                <div class="brn"></div>
-                <div class="brn"></div>
-                <div class="brn"></div>
-                <div class="brn"></div>
-                <div class="brn"></div>
-                <div class="brn"></div>
-                <div class="brn"></div>
-                <div class="brn"></div>
-            </div>
+            <div id="right";>
+                <div class="display">
+                    <ul>
+                        <li>
+                            <p><b>Nombre: dialga</b></p>
+                        </li>
+                        <li>
+                            <p><b>Tipo: Acero Dragon</b></p>
+                        </li>
+                        <li>
+                            <p><b>Altura: 5.4m</b></p>
+                        </li>
+                        <li>
+                            <p><b> Peso: 683 kg.</b></p>
+                        </li>
+                        <li>
+                            <p><b>Descripcion:Dialga es un Pokémon legendario. Se dice que controla y protege el paso del tiempo.</b></p>
+                        </li>
+                    </ul>  
 
+                </div>
+                <div id="pad">
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                </div>
+              
+            </div>
+    
         </div>
     </main>
 </body>
